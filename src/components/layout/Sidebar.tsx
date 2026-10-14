@@ -39,6 +39,11 @@ export function Sidebar() {
             label: "Leads",
         },
         {
+            href: "/customers",
+            icon: Users,
+            label: "Customers",
+        },
+        {
             href: "/measurements",
             icon: Ruler,
             label: "Measurements",
