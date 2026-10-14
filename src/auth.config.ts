@@ -11,7 +11,7 @@ export const authConfig = {
             const role = (auth?.user as any)?.role;
 
             const isOnAdminRoute = nextUrl.pathname.startsWith("/dashboard") || nextUrl.pathname.startsWith("/sales");
-            const isOnProtectedRoute = isOnAdminRoute || nextUrl.pathname.startsWith("/leads") || nextUrl.pathname.startsWith("/quotations") || nextUrl.pathname.startsWith("/reminders") || nextUrl.pathname.startsWith("/products");
+            const isOnProtectedRoute = isOnAdminRoute || nextUrl.pathname.startsWith("/leads") || nextUrl.pathname.startsWith("/customers") || nextUrl.pathname.startsWith("/quotations") || nextUrl.pathname.startsWith("/reminders") || nextUrl.pathname.startsWith("/products");
 
             if (isOnAdminRoute) {
                 if (isLoggedIn && role === "admin") return true;
